@@ -1,6 +1,6 @@
 # Christmas
 
-Fun shell script that displays the number of days until Christmas.
+Fun shell script that displays the number of days until Christmas (December 25).
 
 ## Install
 
