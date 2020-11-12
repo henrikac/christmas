@@ -1,0 +1,15 @@
+#!/bin/bash
+
+INSTALL_PATH="/home/$USER/.local/bin"
+
+if [[ :$PATH == *:"$INSTALL_PATH":* ]] ; then
+	if [ ! -d "$INSTALL_PATH" ]; then
+		mkdir $INSTALL_PATH
+	fi
+
+	cp christmas $INSTALL_PATH && cd $INSTALL_PATH
+	chmod 755 christmas
+	echo "christmas was successfully installed!"
+else
+	echo "$INSTALL_PATH is not in $PATH"
+fi
