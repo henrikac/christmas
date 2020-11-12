@@ -1,0 +1,31 @@
+#!/bin/bash
+
+NOW=$(date -d 'now' +%s)
+CHRISTMAS=$(date -d 'Dec 25' +%s)
+DIFF=$(($CHRISTMAS - $NOW))
+
+DAYS=0
+HOURS=0
+MINUTES=0
+
+# https://stackoverflow.com/a/12199816
+if ((DIFF > 59)); then
+	((DIFF=DIFF/60))
+	
+	if ((DIFF > 59)); then
+		((MINUTES=DIFF%60))
+		((DIFF=DIFF/60))
+
+		if ((DIFF > 23)); then
+			((HOURS=DIFF%24))
+			((DAYS=DIFF/24))
+		else
+			((HOURS=DIFF))
+		fi
+
+	else
+		((MINUTES=DIFF))
+	fi
+fi
+
+echo "$DAYS days, $HOURS hours and $MINUTES minutes"
