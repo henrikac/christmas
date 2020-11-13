@@ -18,7 +18,7 @@ git clone https://github.com/henrikac/christmas.git && cd christmas && bash inst
 
 #### Windows
 
-Install Linux (any distro) and follow the instructions above
+Install Linux and follow the instructions above
 
 ## Usage
 
