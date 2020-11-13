@@ -2,6 +2,10 @@
 
 Fun shell script that displays the number of days until Christmas (December 25).
 
+## Requirements
+
+* [GNU date](https://www.gnu.org/software/coreutils/manual/html_node/date-invocation.html#date-invocation)
+
 ## Install
 
 #### macOS/Linux
