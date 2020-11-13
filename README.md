@@ -22,6 +22,5 @@ Install Linux and follow the instructions above
 
 ## Usage
 
-Run `source christmas`  
+Run `christmas`  
 
-Add `alias christmas="source christmas"` to your `.bashrc` file if you want to avoid typing `source` everytime

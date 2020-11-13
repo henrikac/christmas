@@ -9,6 +9,7 @@ if [[ :$PATH == *:"$INSTALL_PATH":* ]] ; then
 
 	cp christmas $INSTALL_PATH && cd $INSTALL_PATH
 	chmod 755 christmas
+	chmod +x christmas
 	echo "christmas was successfully installed!"
 else
 	echo "$INSTALL_PATH is not in $PATH"
